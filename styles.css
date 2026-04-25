@@ -1,0 +1,15 @@
+/* CSS by Teddi Hoover */
+
+/* Color Palette
+white = #F2F2F2
+muted bronze = #73663F
+cherry red = #8C0303
+garnet red = #590202
+very dark olive = #261D01
+*/
+
+/* GLOBAL STYLES (MOBILE-FIRST) */
+
+body {
+    background-color: #73663F
+}
