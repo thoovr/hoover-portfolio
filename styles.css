@@ -2,6 +2,7 @@
 
 /* Color Palette
 white = #F2F2F2
+light muted bronze = #857750;
 muted bronze = #73663F
 cherry red = #8C0303
 garnet red = #590202
@@ -10,6 +11,185 @@ very dark olive = #261D01
 
 /* GLOBAL STYLES (MOBILE-FIRST) */
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:wght@400;700&family=Seymour+One&display=swap');
+
 body {
-    background-color: #F2F2F2
+    background-color: #F2F2F2;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+    background-color: #590202;
+    color: #73663F;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 1.5rem 3rem;
+}
+
+nav {
+    background-color: #73663F;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #F2F2F2;
+    display: block;
+    text-decoration: none;
+    font-size: 1.15em;
+    margin: 0.5rem;
+    padding: 0.75rem;
+}
+
+nav a:hover {
+    background-color: #857750;
+    color: #590202;
+}
+
+h2 {
+    color: #8C0303;
+    font-size: 1.75em;
+    margin: 0;
+    padding: 3rem 6rem 2rem 6rem;
+}
+
+.intro {
+    color: #261D01;
+    font-size: 1.35em;
+    margin: 0;
+    padding: 0rem 3rem 5rem 3rem;
+}
+
+h2 ~ p {
+    color: #261D01;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0.5rem 3rem;
+}
+
+.bio-row img {
+    display: block;
+    max-width: 250px;
+    margin: auto;
+}
+
+.bio {
+    color: #261D01;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0.5rem 3rem;
+}
+
+h3 {
+    color: #590202;
+}
+
+h3 ~ p {
+    color: #261D01;
+}
+
+.projects {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+}
+
+.projects > section {
+    flex: 1 1 1;
+    padding: 1rem;
+}
+
+.projects > section > a > img {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+}
+
+.contacts {
+    margin: 0;
+    padding: 0 0 3rem 0;
+}
+
+.contacts p {
+    color: #261D01;
+    font-size: 1.35rem;
+}
+
+.contacts a {
+    color: #73663F;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: #590202;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #261D01;
+    color: #73663F;
+    margin: 0;
+    padding: 1rem 3rem;
+}
+
+
+/* MEDIA QUERY (MEDIUM and above) */
+
+@media screen and (min-width: 769px) {
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .content {
+        flex: 1;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .bio-row {
+        display: flex;
+    }
+
+    .bio-row img {
+        display: inline;
+        margin: 1rem 1rem 3rem 3rem;
+        align-self: center;
+    }
+
+    .bio {
+        margin: 0;
+        padding: 3rem 3rem 3rem 1rem;
+        line-height: 1.75;
+    }
+
+    .contacts {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        height:400px;
+    }
+
+    .contacts section {
+        padding: 1rem 3rem;
+    }
 }
